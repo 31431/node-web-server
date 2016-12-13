@@ -51,6 +51,12 @@ app.get('/about',(request,response)=>{
 	});
 });
 
+app.get('/project',(request,response)=>{
+	response.render('project.hbs',{
+		pageTitle: 'Ongoing Project'
+	});
+});
+
 app.get('/bad',(request,response)=>{
 	response.send({
 		errorMessage: 'An error has occured!'
